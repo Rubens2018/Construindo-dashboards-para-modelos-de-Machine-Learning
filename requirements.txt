@@ -1,0 +1,4 @@
+plotly==5.19.0
+ucimlrepo==0.0.3
+pandas==2.2.0
+dash==2.15.0
