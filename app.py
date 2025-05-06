@@ -23,6 +23,13 @@ div_do_boxplot = html.Div([
             dcc.Graph(figure=figura_boxplot)
         ])
 
+# boxplot colesterol
+figura_boxplot_chol = px.box(dados, x='doenca', y = 'chol', color='doenca', title='Boxplot de colesterol')
+div_do_boxplot_chol = html.Div([
+            html.H2('Boxplot de colesterol'),
+            dcc.Graph(figure=figura_boxplot_chol)
+        ])
+
 app = Dash(__name__)
 app.layout = html.Div([
         html.H1('Análise de dados do UCI Repository Heart Disease'),
